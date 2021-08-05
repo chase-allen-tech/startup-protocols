@@ -20,6 +20,7 @@ Named entities: John Doe (PERSON), the United States (GPE)
 ### Templates:
 Because we don't aim to test you on project setup, we have provided templates that you may choose to use if you wish. For the frontend, we've given you templates in [`Vue.js`](https://vuejs.org/), [`React.js`](https://reactjs.org/), and [`Angular`](https://angular.io/). For the backend, we have provided a template in [`Flask`](https://flask.palletsprojects.com/en/2.0.x/).
 1. Make sure you have `Node.js` and `npm` installed.
+   * In case you don't have Node.js or npm installed, refer to the NodeSource blog posts [Installing Node.js Tutorial: Using nvm](https://nodesource.com/blog/installing-node-js-tutorial-using-nvm-on-mac-os-x-and-ubuntu/) (macOS and Ubuntu) or [Installing Node.js Tutorial: Windows](https://nodesource.com/blog/installing-nodejs-tutorial-windows/) (Windows) for instructions.
 2. Run `make install FRONTEND=react-frontend BACKEND=flask-backend`
 3. Run `make start FRONTEND=react-frontend BACKEND=flask-backend`
 
