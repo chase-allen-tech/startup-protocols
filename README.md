@@ -29,4 +29,6 @@ Because we don't aim to test you on project setup, we have provided templates th
 * **Accuracy of model** - The model you choose to use should be able to cover the very basics, like recognizing `the United States` as a GPE. We will not be giving it a detailed accuracy score, we just want to know the model works.
 * **Creativity** - This is a catch-all category for whatever else you want to incorporate to show off your skills. Some examples could be implementing more entity types or other linguistic features, creating a more visually appealing interface, creating an option to use a different language, or adding better error handling. This is your time to shine.
 
+![Example app](./assets/web_ner_example.png)
+
 > If you have any questions/comments while working on this, please reach out to your contact at ISI.
