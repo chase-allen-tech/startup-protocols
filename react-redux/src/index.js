@@ -6,12 +6,26 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './index.scss';
 import { AsterControllerProvider } from './context';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import Sample from './pages/Sample';
+import SampleOther from './pages/SampleOther';
 
 ReactDOM.render(
   <React.StrictMode>
-    <AsterControllerProvider>
-      <App />
-    </AsterControllerProvider>
+    <BrowserRouter>
+      <AsterControllerProvider>
+        <Routes>
+          <Route path="/" exact element={<Navigate to="/dashboard" replace />} />
+          <Route path="/dashboard" element={<App />} />
+          <Route path="sample">
+            <Route index element={<Sample />} />
+            <Route path="other" element={<SampleOther />} />
+            <Route path=":sampleId" element={<Sample />} />
+          </Route>
+
+        </Routes>
+      </AsterControllerProvider>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
